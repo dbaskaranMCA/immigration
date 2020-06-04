@@ -8011,10 +8011,10 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #fd7792; }
+  color: #3058b1; }
   a:hover, a:focus {
     text-decoration: none;
-    color: #fd7792;
+    color: #3058b1;
     outline: none !important; }
 
 h1, h2, h3, h4, h5,
@@ -8537,7 +8537,7 @@ h1, h2, h3, h4, h5,
       border: 2px solid rgba(0, 0, 0, 0.1);
       border-radius: 4px; }
   .room-wrap:hover, .room-wrap:focus {
-    background: #fd7792; }
+    background: #2a57b9;}
     .room-wrap:hover .half.left-arrow:after, .room-wrap:focus .half.left-arrow:after {
       border-color: transparent #fd7792 transparent transparent; }
     .room-wrap:hover .half.right-arrow:after, .room-wrap:focus .half.right-arrow:after {

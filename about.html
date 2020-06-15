@@ -25,6 +25,238 @@
 
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+		#serv {
+			background-color: #232323;
+		}
+
+		.counters {
+			color: #222;
+			text-align: center;
+			padding: 70px 0 100px 0;
+		}
+
+		.counters.style_2 {
+			color: #FFF;
+			background: #222;
+		}
+
+		.counters h2 {
+			height: 70px;
+			clear: both;
+			margin-bottom: 50px;
+		}
+
+		.counters .row {
+			clear: both;
+		}
+
+		.counters h3 {
+			clear: both;
+			margin-top: 30px;
+		}
+
+		.counter {
+			display: inline-block;
+			font-size: 50px;
+			line-height: 45px;
+			padding: 10px;
+			background: #222;
+		}
+
+		/* ==============================================
+Services
+=============================================== */
+		.service_bg {
+			background: #222;
+		}
+
+		.service_bg>div>div {
+			padding: 0;
+		}
+
+		.service_bg>div>div.services_title {
+			padding: 150px 50px;
+			color: #FFF;
+		}
+
+		.service_bg>div>div.services_title.pull-right {
+			right: 0;
+		}
+
+		.services {
+			background: url("../images/services_1.jpg") top center fixed;
+		}
+
+		.services.style_2 {
+			background: url("../images/services_2.jpg") top center fixed;
+		}
+
+		.services {
+			text-align: center;
+		}
+
+		.services>div {
+			padding: 0;
+		}
+
+		/* .services>div:nth-child(2n+1) {
+			background: rgba(0, 0, 0, .3);
+		} */
+
+		.services>div a {
+			display: block;
+			padding: 100px 20px;
+			color: #FFF;
+		}
+
+		.services>div i {
+			font-size: 40px;
+		}
+
+		/* .services>div p {
+			color: #FFF;
+			font-size: 16px;
+		} */
+
+		.workprocess>div {
+			background: rgba(255, 255, 255, .9);
+		}
+
+		.workprocess .container>.row>div,
+		.workprocess .container-fluid>div {
+			padding: 0;
+		}
+
+		.workprocess .block {
+			text-align: center;
+		}
+
+		.workprocess .block h3 {
+			color: #333;
+		}
+
+		.workprocess .block h3,
+		.workprocess .block p {
+			padding: 0 20px;
+			color: #000;
+		}
+
+		.workprocess .block i {
+			font-size: 20px;
+		}
+
+		.workprocess .icon {
+			position: relative;
+		}
+
+		.workprocess .icon>div {
+			text-align: center;
+			height: 80px;
+			padding: 38px 0;
+		}
+
+		.workprocess .icon i {
+			font-size: 40px;
+			line-height: 80px;
+			width: 80px;
+			height: 80px;
+			background: #222;
+			color: #FFF;
+			border-radius: 50%;
+			position: relative;
+		}
+
+		.workprocess .container .icon::before,
+		.workprocess .container-fluid .icon::before {
+			background: #fff !important;
+			/* For browsers that do not support gradients */
+			background: -webkit-linear-gradient(90deg, #3100cc, #9900ff, #cc00ff, #ff3b00, #ff7000, #ffb300) !important;
+			/* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(90deg, #3100cc, #9900ff, #cc00ff, #ff3b00, #ff7000, #ffb300) !important;
+			/* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(90deg, #3100cc, #9900ff, #cc00ff, #ff3b00, #ff7000, #ffb300) !important;
+			/* For Firefox 3.6 to 15 */
+			background: linear-gradient(90deg, #3100cc, #9900ff, #cc00ff, #ff3b00, #ff7000, #ffb300) !important;
+			/* Standard syntax (must be last) */
+		}
+
+		.block:hover i,
+		.workprocess .block h3,
+		.workprocess .block:hover h3 {
+			-moz-transition: all .3s ease;
+			-webkit-transition: all .3s ease;
+			-o-transition: all .3s ease;
+			transition: all .3s ease;
+		}
+
+		::selection {
+			background: #f97575;
+			text-shadow: none;
+			color: #FFF;
+		}
+
+		h2 {
+			margin: 40px 0;
+			font-size: 35px;
+		}
+
+		.workprocess .block i,
+		.workprocess .block:hover i,
+		.workprocess .block h3,
+		.workprocess .block:hover h3 {
+			-moz-transition: all .3s ease;
+			-webkit-transition: all .3s ease;
+			-o-transition: all .3s ease;
+			transition: all .3s ease;
+		}
+
+		h3 {
+			margin: 25px 0;
+			font-size: 22px;
+		}
+
+		h1,
+		h2,
+		h3 {
+			text-transform: uppercase;
+		}
+
+		h1,
+		h2,
+		h3 {
+			font-family: 'Raleway', sans-serif;
+			font-weight: 200;
+		}
+
+		.workprocess .block:hover i {
+			background: #f97575;
+			color: #222;
+		}
+
+		@media screen and (min-width:992px) {
+
+
+			.workprocess .container .icon:before {
+				content: '';
+				position: absolute;
+				height: 5px;
+				width: 100%;
+				top: 50%;
+				left: 0;
+				background: #222;
+			}
+
+			.workprocess .container .icon.first::before {
+				left: 50%;
+				width: 50%;
+			}
+
+			.workprocess .container .icon.last::before {
+				width: 50%;
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -32,12 +264,12 @@
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col d-flex align-items-center">
-					
+
 				</div>
-				
+
 				<div class="col d-flex justify-content-end p-2">
 					<p class="mb-0 phone"><span class="mailusn fa fa-phone text-white"></span> <a href="#"
-							class="pl-1">8050559470</a> <span class="mailus fa fa-envelope text-white"> </span> <a
+							class="pl-1">+918431876012</a> <span class="mailus fa fa-envelope text-white"> </span> <a
 							href="#" class="pl-1">Enquiry@gospelimmigration.com</a>
 					<div class="social-media ml-3">
 						<p class="mb-0 d-flex">
@@ -72,7 +304,8 @@
 								</li>
 								<li class="list-group-item"><a href="australia-immigration.html">Australia
 										Immigration</a></li>
-								<li class="list-group-item"><a href="germany-immigration.html">Germany Immigration</a> </li>
+								<li class="list-group-item"><a href="germany-immigration.html">Germany Immigration</a>
+								</li>
 								<li class="list-group-item"><a href="uk-immigration.html">UK Immigration</a></li>
 							</ul>
 						</div>
@@ -83,21 +316,22 @@
 								<li class="list-group-item"><a href="study-in-canada.html">Study in Canada </a></li>
 								<li class="list-group-item"><a href="study-in-australia.html">Study in Australia </a>
 								</li>
-										<li class="list-group-item"><a href="study-in-usa.html">Study in USA </a> </li>
+								<li class="list-group-item"><a href="study-in-usa.html">Study in USA </a> </li>
 								<li class="list-group-item"><a href="study-in-uk.html">Study in UK </a></li>
-								<!--	<li class="list-group-item"><a href="#">Study in Europe </a></li> --><li class="list-group-item"><a href="#">Study in Germany </a></li>
+								<!--	<li class="list-group-item"><a href="#">Study in Europe </a></li> -->
+								<li class="list-group-item"><a href="study-in-germany.html">Study in Germany </a></li>
 							</ul>
 						</div>
 					</li>
 					<li class="nav-item active"><a href="about.html" class="nav-link">About Us</a></li>
-						<li class="nav-item "><a href="contact.html" class="nav-link">Contact</a></li>
+					<li class="nav-item "><a href="contact.html" class="nav-link">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	<!-- END nav -->
 
-	<section class="hero-wrap hero-wrap-2" style="background-image: url('images/services-1.jpg');"
+	<section class="hero-wrap hero-wrap-2" style="background-image: url('images/about-us.jpg');"
 		data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
@@ -118,8 +352,8 @@
 				<div class="col-md-6 wrap-about">
 					<div class="img img-2 mb-4" style="background-image: url(images/about.jpg);">
 					</div>
-				
-									</div>
+
+				</div>
 				<div class="col-md-6 wrap-about ftco-animate">
 					<div class="heading-section">
 						<div class="pl-md-5">
@@ -127,29 +361,131 @@
 						</div>
 					</div>
 					<div class="pl-md-5">
-						<p class="text-justify">Gospel Immigration providing trusted & reliable immigration  services to our clients. 
-							Canada and Australia immigration services. We also provide Consultancy & Legal representation for countries such as the USA, UK . 
-							The firm maintains exceptionally high professional standards. 
-							Our immigration attorneys speak regularly on immigration issues as recognized leaders within a highly specialized bar and are active in industry groups such as the ICCRC & MARA, whose members are designated by Government of Canada and Australia Migration Agents Registration Authority.
-							Our legal professionals and staff work hard to provide our clients with efficient, results-oriented services, and we take pride in our strong client relationships, dedication to professional practice and the successes of our clients.</p>
-							
-							<p class="text-justify">Being the best Gospel Immigration Visa Consultants help in processing Visa application according to clients chosen Country's.</p>		
-								
-							<p class="text-justify">To provide highly personalized services regarding Immigration and Visa matters to our clients Such as Skilled Migration,Student Visa,Business Immigration and family category applications for Canada  Australia USA & UK.</p>
-							<p class="text-justify">Many law firms are only now recognizing that immigration doesn’t just facilitate movement, it is often a crucial business and economic necessity. focused on the essential business role that immigrants can play in innovation, job growth, and economic progress. This business acumen and our commitment to a smarter, superior standard of service has made us one of the most respected firms in the immigration world among peers, clients, and government officials.</p>
-						</div>
+						<p class="text-justify">Gospel Immigration providing trusted & reliable immigration services to
+							our clients.
+							Canada and Australia immigration services. We also provide Consultancy & Legal
+							representation for countries such as the USA, UK .
+							The firm maintains exceptionally high professional standards.
+							Our immigration attorneys speak regularly on immigration issues as recognized leaders within
+							a highly specialized bar and are active in industry groups such as the ICCRC & MARA, whose
+							members are designated by Government of Canada and Australia Migration Agents Registration
+							Authority.
+							Our legal professionals and staff work hard to provide our clients with efficient,
+							results-oriented services, and we take pride in our strong client relationships, dedication
+							to professional practice and the successes of our clients.</p>
+
+						<p class="text-justify">Being the best Gospel Immigration Visa Consultants help in processing
+							Visa application according to clients chosen Country's.</p>
+
+						<p class="text-justify">To provide highly personalized services regarding Immigration and Visa
+							matters to our clients Such as Skilled Migration,Student Visa,Business Immigration and
+							family category applications for Canada Australia USA & UK.</p>
+						<p class="text-justify">Many law firms are only now recognizing that immigration doesn’t just
+							facilitate movement, it is often a crucial business and economic necessity. focused on the
+							essential business role that immigrants can play in innovation, job growth, and economic
+							progress. This business acumen and our commitment to a smarter, superior standard of service
+							has made us one of the most respected firms in the immigration world among peers, clients,
+							and government officials.</p>
+					</div>
 
 				</div>
 				<div class="col-md-12">
-					<p class="text-justify">We offer advice and counsel to a broad range of industries and people, with an unwavering commitment to superior service in every case we undertake.
+					<p class="text-justify">We offer advice and counsel to a broad range of industries and people, with
+						an unwavering commitment to superior service in every case we undertake.
 
-						We help clients develop effective immigration and saves their time and costin with efficient manner, maximize successful immigration outcomes, and avoid the pitfalls of immigration compliance.
-					   
-					   We succeed, in part, because we have a better understanding of how the government thinks. We spent significant time doing just that kind of thinking ourselves on the other side of the fence working on immigration issues in key government positions. It gives us unique insight into what matters to the people whose decisions matter so much to our clients.
-					   
-					   Our goal was to create an immigration firm that was international in scope and personal in nature;  We are also committed to pro bono initiatives to help individual clients with special needs, often victims without access to the resources they need to make positive changes in their lives.
-					   
-					   The firm’s partners aggressively protect our clients’ interests because we all share the fundamental understanding that every case represents a real person, whose hopes, dreams, and aspirations to acheive your goal.</p>
+						We help clients develop effective immigration and saves their time and costin with efficient
+						manner, maximize successful immigration outcomes, and avoid the pitfalls of immigration
+						compliance.
+
+						We succeed, in part, because we have a better understanding of how the government thinks. We
+						spent significant time doing just that kind of thinking ourselves on the other side of the fence
+						working on immigration issues in key government positions. It gives us unique insight into what
+						matters to the people whose decisions matter so much to our clients.
+
+						Our goal was to create an immigration firm that was international in scope and personal in
+						nature; We are also committed to pro bono initiatives to help individual clients with special
+						needs, often victims without access to the resources they need to make positive changes in their
+						lives.
+
+						The firm’s partners aggressively protect our clients’ interests because we all share the
+						fundamental understanding that every case represents a real person, whose hopes, dreams, and
+						aspirations to acheive your goal.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="counters" id="serv">
+		<div class="container">
+			<h2 style="color: #FFF;"><strong>Services</strong></h2>
+			<div class="row">
+				
+				<div class="col-lg-4 appear-animation fadeInUpDown appear-animation-visible"
+					data-appear-animation="fadeInUpDown"><i class="fa fa-user" aria-hidden="true"
+						style="font-size: 80px !important;  color: #FFF !important;"></i>
+					<h3 style="color: #FFF;">Expert Assistance </h3>
+				</div>
+				<div class="col-lg-4 appear-animation delay_1 fadeInUpDown appear-animation-visible"
+					data-appear-animation="fadeInUpDown"><i class="fa fa-barcode" aria-hidden="true"
+						style="font-size: 80px !important; color: #FFF !important;"></i>
+					<h3 style="color: #FFF;">Registered Under MARA/ICCRC </h3>
+				</div>
+				<div class="col-lg-4 appear-animation delay_2 fadeInUpDown appear-animation-visible"
+					data-appear-animation="fadeInUpDown"><i class="fa fa-thumbs-o-up" aria-hidden="true"
+						style="font-size: 80px !important; color: #FFF !important;"></i>
+					<h3 style="color: #FFF;">100% Trust &amp; Assistance </h3>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="workprocess">
+		<div class="big_block">
+			<div class="container">
+				<h2 class="text-center"><strong>Work Process</strong></h2>
+				<div class="row">
+					<div class="col-md-3 col-sm-6"><a href="#">
+							<div class="block">
+								<div class="icon first"><i class="fa fa-plane"></i></div>
+								<h3>Eligibility</h3>
+								<p>Once we receive a client’s profile, a strict credential evaluation is done as per
+									eligibility
+
+									norms so that rejections are ruled out.</p>
+							</div>
+						</a></div>
+					<div class="col-md-3 col-sm-6"><a href="#">
+							<div class="block">
+								<div class="icon"><i class="fa fa-file-text-o"></i></div>
+								<h3>Documentation</h3>
+								<p>According to our immigration consultants, a large part of application’s success can
+									be
+
+									credited to correct documentation. Our experts guide and follow through with clients
+									until
+
+									full-documentation is received and verified.</p>
+							</div>
+						</a></div>
+					<div class="col-md-3 col-sm-6"><a href="#">
+							<div class="block">
+								<div class="icon"><i class="fa fa-briefcase"></i></div>
+								<h3>Submission</h3>
+								<p>Once the documents are scrutinized and found in order, our lawyers go through the
+									entire
+
+									application before filling it.</p>
+							</div>
+						</a></div>
+					<div class="col-md-3 col-sm-6"><a href="#">
+							<div class="block">
+								<div class="icon last"><i class="fa fa-thumbs-o-up"></i></div>
+								<h3>Trust</h3>
+								<p>Your trust on us and our expertise on the process enables us to deliver you your
+									dream
+
+									destination.</p>
+							</div>
+						</a></div>
 				</div>
 			</div>
 		</div>
@@ -162,97 +498,102 @@
 						<div class="img" style="background-image: url(images/services-1.jpg);"></div>
 						<div class="media-body py-4 px-3">
 							<h3 class="heading">VISION & MISSION</h3>
-							<p>You walk by faith in our services as we are Incroprated in INDIA and we work with ICCRC & MARA represents your application on legal channel, Most trusted, relaible and transperency on our Services by enabling and empowering clients to achieve their dreams in ethical standards</p>
-							
+							<p>You walk by faith in our services as we are Incroprated in INDIA and we work with ICCRC &
+								MARA represents your application on legal channel, Most trusted, relaible and
+								transperency on our Services by enabling and empowering clients to achieve their dreams
+								in ethical standards</p>
+
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
 		</div>
 	</section>
 	<section class="ftco-section bg-light pb-0 pt-0">
 		<div class="container">
 			<div class="row no-gutters">
-				
+
 				<div class="col-md-12">
 					<h3>WHY US</h3>
-					<p class="text-justify">GOSPEL IMMIGRATION PRIVATE LIMITED is fully incorporated in India as Private Limited Company and also work independently with ICCRC & MARA members for leagl representation for granting VISA.</p>
+					<p class="text-justify">GOSPEL IMMIGRATION PRIVATE LIMITED is fully incorporated in India as Private
+						Limited Company and also work independently with ICCRC & MARA members for leagl representation
+						for granting VISA.</p>
 				</div>
 			</div>
 			<div class="container">
-				<div class="row -block services-wrap bg-white p-5 pb-2">			
-						
-							<div class="services-2 col-lg-6 d-flex w-100">
-								<div class="icon d-flex justify-content-center align-items-center">
-									<span class="flaticon-first"></span>
-								</div>
-								<div class="media-body pl-3">
-									<h3 class="heading">Trancperancy , Trusted and reliable Services.</h3>
-								
-								</div>
-							</div>
-							<div class="services-2 col-lg-6 d-flex w-100">
-								<div class="icon d-flex justify-content-center align-items-center">
-									<span class="flaticon-first"></span>
-								</div>
-								<div class="media-body pl-3">
-									<h3 class="heading">Relax with Peace of mind to get your Visa grant.</h3>
-									
-								</div>
-							</div>
-							<div class="services-2 col-lg-6 d-flex w-100">
-								<div class="icon d-flex justify-content-center align-items-center">
-									<span class="flaticon-first"></span>
-								</div>
-								<div class="media-body pl-3">
-									<h3 class="heading">Saves you a lot of time and cost.</h3>
-									
-								</div>
-							</div>
-							<div class="services-2 col-lg-6 d-flex w-100">
-								<div class="icon d-flex justify-content-center align-items-center">
-									<span class="flaticon-first"></span>
-								</div>
-								<div class="media-body pl-3">
-									<h3 class="heading">Clear guidelines in preparing all supporting documents.</h3>
-								
-								</div>
-							</div>
-							<div class="services-2 col-lg-6 d-flex w-100">
-								<div class="icon d-flex justify-content-center align-items-center">
-									<span class="flaticon-first"></span>
-								</div>
-								<div class="media-body pl-3">
-									<h3 class="heading">Free IELTS and PTE online course.</h3>
-								
-								</div>
-							</div>
-							<div class="services-2 col-lg-6 d-flex w-100">
-								<div class="icon d-flex justify-content-center align-items-center">
-									<span class="flaticon-first"></span>
-								</div>
-								<div class="media-body pl-3">
-									<h3 class="heading">One stop solution for settlement advice and support </h3>
-								
-								</div>
-							</div>
-							</div>
-						
+				<div class="row -block services-wrap bg-white p-5 pb-2">
+
+					<div class="services-2 col-lg-6 d-flex w-100">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-first"></span>
+						</div>
+						<div class="media-body pl-3">
+							<h3 class="heading">Trancperancy , Trusted and reliable Services.</h3>
+
+						</div>
 					</div>
-					
-			
+					<div class="services-2 col-lg-6 d-flex w-100">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-first"></span>
+						</div>
+						<div class="media-body pl-3">
+							<h3 class="heading">Relax with Peace of mind to get your Visa grant.</h3>
+
+						</div>
+					</div>
+					<div class="services-2 col-lg-6 d-flex w-100">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-first"></span>
+						</div>
+						<div class="media-body pl-3">
+							<h3 class="heading">Saves you a lot of time and cost.</h3>
+
+						</div>
+					</div>
+					<div class="services-2 col-lg-6 d-flex w-100">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-first"></span>
+						</div>
+						<div class="media-body pl-3">
+							<h3 class="heading">Clear guidelines in preparing all supporting documents.</h3>
+
+						</div>
+					</div>
+					<div class="services-2 col-lg-6 d-flex w-100">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-first"></span>
+						</div>
+						<div class="media-body pl-3">
+							<h3 class="heading">Free IELTS and PTE online course.</h3>
+
+						</div>
+					</div>
+					<div class="services-2 col-lg-6 d-flex w-100">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-first"></span>
+						</div>
+						<div class="media-body pl-3">
+							<h3 class="heading">One stop solution for settlement advice and support </h3>
+
+						</div>
+					</div>
+				</div>
+
 			</div>
-		
+
+
+		</div>
+
 		</div>
 	</section>
 
-	
+
 	<section class="ftco-section testimony-section bg-light">
 		<div class="container">
-			<div class="row justify-content-center pb-5 mb-3">
+			<div class="row justify-content-center">
 				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h2>Happy Clients &amp; Feedbacks</h2>
+					<h3>Happy Clients &amp; Feedbacks</h2>
 				</div>
 			</div>
 			<div class="row ftco-animate">
@@ -339,19 +680,22 @@
 		</div>
 	</section>
 
-	
+
 
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
 					<h2 class="footer-heading"><a href="#" class="logo">Gospel Immigration</a></h2>
-					<p>Gospel Immigration providing trusted & reliable immigration  services to our clients.  Canada and Australia immigration services. We also provide Consultancy & Legal representation for countries such as the USA, UK. </p>
+					<p>Gospel Immigration providing trusted & reliable immigration services to our clients. Canada and
+						Australia immigration services. We also provide Consultancy & Legal representation for countries
+						such as the USA, UK. </p>
 					<a href="#">Read more <span class="fa fa-chevron-right" style="font-size: 11px;"></span></a>
 					<div>
-					<a href="#"><img src="images/iccrc.png" width="100px"></a>
-					<a href="https://iccrc-crcic.ca/find-a-professional/"><img src="images/iccrc1.png" width="144px"></a>
-				</div>
+						<a href="#"><img src="images/iccrc.png" width="100px"></a>
+						<a href="https://iccrc-crcic.ca/find-a-professional/"><img src="images/iccrc1.png"
+								width="144px"></a>
+					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
 					<h2 class="footer-heading">Services</h2>
@@ -359,8 +703,8 @@
 						<li><a href="#" class="py-1 d-block">Study in Australia</a></li>
 						<li><a href="#" class="py-1 d-block">Study in Canada</a></li>
 						<li><a href="#" class="py-1 d-block">Study in USA</a></li>
-<li><a href="#" class="py-1 d-block">Study in Germany</a></li>
-<!-- <li><a href="#" class="py-1 d-block">Study in Europe</a></li> -->
+						<li><a href="#" class="py-1 d-block">Study in Germany</a></li>
+						<!-- <li><a href="#" class="py-1 d-block">Study in Europe</a></li> -->
 						<li><a href="#" class="py-1 d-block">Canada Immigration</a></li>
 						<li><a href="#" class="py-1 d-block">Australia Immigration</a></li>
 						<li><a href="#" class="py-1 d-block">Immigration to Germany</a></li>
@@ -372,21 +716,22 @@
 					<div class="tagcloud">
 						<a href="index.html" class="tag-cloud-link">Home</a>
 						<a href="#" class="tag-cloud-link">Immigration</a>
-						<a href="#" class="tag-cloud-link">Study Abroad</a>						
+						<a href="#" class="tag-cloud-link">Study Abroad</a>
 					</div>
 					<div class="tagcloud">
-						<a href="#" class="tag-cloud-link">About US</a>						
-						<a href="javascript.void(0)" data-toggle="modal" data-target="#exampleModal" class="tag-cloud-link"> Quick Enquiry</a>
-										
+						<a href="#" class="tag-cloud-link">About US</a>
+						<a href="javascript.void(0)" data-toggle="modal" data-target="#exampleModal"
+							class="tag-cloud-link"> Quick Enquiry</a>
+
 					</div>
 					<h2 class="footer-heading">Contact Us</h2>
 					<p>Gospel Immigration Priate Limited <br>
 						Fl No 202, Gupta Apt, 2nd Floor <br>
 						MS Palaya, Vidyaranyapura <br>
 						Bengaluru, Banglore-560097 Karnataka,
-						
+
 					</p>
-					<p>Mobile : 8050559470</p>
+					<p>Mobile : +918431876012</p>
 
 				</div>
 				<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
@@ -421,9 +766,9 @@
 					<div class="col-md-6 col-lg-6 text-md-right">
 						<p class="mb-0 list-unstyled">
 							<a class="mr-md-3" href="terms.html">Terms & Condition</a>
-                            	<a class="mr-md-3" href="refund-policy.html">Refund Policy</a>
-                            <a class="mr-md-3" href="disclaimer.html">Disclaimer</a>
-                            <a class="mr-md-3" href="privacy-policy.html">Privacy Policy </a>
+							<a class="mr-md-3" href="refund-policy.html">Refund Policy</a>
+							<a class="mr-md-3" href="disclaimer.html">Disclaimer</a>
+							<a class="mr-md-3" href="privacy-policy.html">Privacy Policy </a>
 						</p>
 					</div>
 				</div>
@@ -474,7 +819,7 @@
 						<div class="form-group">
 							<div class="form-field">
 								<div class="select-wrap">
-									
+
 									<select name="" id="" class="form-control">
 										<option value="">Select Service</option>
 										<option value="">Canada Immigration</option>
@@ -492,7 +837,7 @@
 						<div class="form-group">
 							<div class="form-field">
 								<div class="select-wrap">
-									
+
 									<select name="" id="" class="form-control">
 										<option value="">Select Source</option>
 										<option value="">Google</option>
@@ -513,7 +858,7 @@
 							I Accept Terms and Conditions
 						</label>
 					</div> -->
-						
+
 					</div>
 				</div>
 				<div class="modal-footer">
@@ -540,7 +885,7 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
-	
+
 	<script src="js/main.js"></script>
 
 

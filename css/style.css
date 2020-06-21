@@ -9025,6 +9025,12 @@ footer {
     .blog-entry {
       margin-bottom: 40px; } }
   @media (max-width: 767.98px) {
+    #imDetails:hover .immigration,.saDetails:hover .studyAbroad{
+      
+      position: relative !important;  
+      z-index: 9;
+      width: 100%;
+    }
     .blog-entry {
       margin-bottom: 30px; } }
   .blog-entry .text {
@@ -9415,7 +9421,8 @@ footer {
 
 #imDetails:hover .immigration,.saDetails:hover .studyAbroad{
   display: block;
-  position: absolute;
+  position: absolute;  
+  z-index: 9;
 }
 
 @-webkit-keyframes loader-rotate {

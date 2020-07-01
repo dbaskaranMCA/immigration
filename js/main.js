@@ -160,7 +160,36 @@
 
 	$('.appointment_time').timepicker();
 
-
+	$("#btnSubmit2").click(function (e) {
+		var t = $("#name").val(),
+			a = $("#phone").val(),
+			l = $("#email").val(),
+			n = $("#service").children("option:selected").val(),
+			i = $("#source").children("option:selected").val();
+		//o.length;
+		$.ajax({
+			type: "post",
+			async: !1,
+			url: "EnquiryNew.ashx",
+			data: {
+				name: t,
+						phone: a,
+						email: l,
+						service: n,
+						source: i,
+						msg: "testing",
+						enqmsg: "EnquiryMessage",
+			},
+			datatype: "json",
+			success: function (e) {
+				
+						if(e == "SUCCESS") { alert("HI");
+						}
+					
+				}
+			
+		})
+	});
 
 })(jQuery);
 

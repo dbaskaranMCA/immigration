@@ -9472,3 +9472,9 @@ footer {
 .immigration .list-group li{
   text-transform: uppercase;
 }
+
+#btnSubmit2{
+  background: #1d3f87;
+  border: 1px solid #1d3f87;
+  color: #fff;
+}
